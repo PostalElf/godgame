@@ -1,0 +1,20 @@
+Name,Difficulty/dropRange,Health,Might,Cunning,Sorcery,Special,Description
+Giant Rats,0,5,1,1,0,,The bane of sewers everywhere.
+Mangy Wolves,5,3,2,1,0,,Starving wolves desperate for some meat.
+Bandit Hedgewizard,5,5,0,2,1,,"A mere dabbler in the Craft, but with some true power nonetheless."
+Balthazor's Apprentice,5,5,2,0,1,,A follower of the cult of Balthazor.
+Goblin Gang,5,5,1,2,0,,"Annoying, but mostly manageable."
+Hobgoblin Shaman,5,5,1,0,2,,"Its spells may be crude, but they still have a bite."
+Kobold Mage,5,5,0,1,2,,Underestimating it was the last mistake many adventurers made.
+Dire Wolf,10,8,3,0,0,,A snarling beast nearly twice the size the average wolf.
+Tentacled Thing,10,8,0,3,0,,Almost invisible until you are almost upon it.
+Shrieker,10,8,0,0,3,,A hideous cross between a vulture and a banshee.
+Restless Spirit,15,8,0,0,3,Immune:Might,"Find the right ritual, and it will be banished like fog before sunshine."
+Guild Enforcer,15,8,3,0,0,Immune:Cunning,A lifetime of hunting down thieves has taught him much about dirty fighting.
+Licensed Magehunter,15,8,0,3,0,Immune:Sorcery,His fervour shields him from all magical attacks.
+Highland Banshee,20,10,2,1,3,,Her scream can rip the very foundations from nearby crypts.
+Sanctioned Bounty-Hunter,20,10,3,2,1,,Someone's put a price on your hero's head.
+Lizardman Raider,20,10,1,3,2,,"Damp, scaly, and fishy.  Fast, though, and their steel's as good as any other."
+Stone Elemental,25,15,3,1,2,,A powerful being forged of soil and stone.
+Storm Elemental,25,15,1,2,3,,The very heart of a summer's storm.
+Fire Elemental,25,15,2,3,1,,"A living inferno, barely tamed by a mage's will."

@@ -1,0 +1,30 @@
+Name,Cost,dropRange,Keyword,Might,Cunning,Sorcery,Might (Att),Cunning (Att),Sorcery (Att),Might (Def),Cunning (Def),Sorcery (Def),Might (Skill),Cunning (Skill),Sorcery (Skill),Description,Special
+Gold,5-10,0,Gold,,,,,,,,,,,,,Gold,
+Keen Waraxe,10,5,Weapon,,,,1,,,,,,,,,It has an edge sharp enough to shave with.,
+Masterwork Dagger,10,5,Weapon,,,,,1,,,,,,,,Wickedly sharp.  Might have once belonged to an assassin.,
+Firetwig Wand,10,5,Weapon,,,,,,1,,,,,,,The tip smoulders with an inner heat.,
+Hefty Shield,10,5,Shield,,,,,,,1,,,,,,"Solid, sturdy, dependable.",
+Duelist's Buckler,10,5,Shield,,,,,,,,1,,,,,"Probably once belonged to some dandy, but is no less effective for that unfortunate bit of history.",
+Hedgewizard's Talisman,10,5,Amulet,,,,,,,,,1,,,,"Tawdry and cheaply made, but it hums with a measure of true power.",
+Gold,10-15,7,Gold,,,,,,,,,,,,,Gold,
+Burlap Sack,10,7,Bag,,,,,,,,,,,,,A simple burlap sack that helps your hero hold another item.,Space +1
+Raven Clasp,10,7,Amulet,-1,2,-1,,,,,,,,,,"Transforming into a raven, while nice, is not without its downsides.",
+Bronze Curiass,15,10,Armour,,,,,,,1,,,,,,"Uncomfortable, but quite capable of stopping a good sword.",
+Thief's Leathers,15,10,Armour,,,,,,,,1,,,,,"Sleek, dark, and quite sexy.",
+Shielding Cloak,15,10,Armour,,,,,,,,,1,,,,Popularly worn by mages during sanctioned magical duels.,
+Health Potion,0,17,Opportunity,,,,,,,,,,,,,A chance to heal some wounds and hurts.,Heal 1d6 Health
+Gold,15-20,17,Gold,,,,,,,,,,,,,Gold,
+Locked Casket,Cunning,17,Opportunity,,,,,,,,,,,,,A small chest filled with valuables.  Could be worth something if your hero manages to jimmy the lock open.,Loot at 20 dropRange and +10 dropRollModifier
+Thieves' Tools,20,17,Belt,,,,,,,,,,,2,,Useful in a multitude of situations.,
+Ivory Greatsword,20,20,Weapon,,,,1,,,1,,,,,,Forged by the finest ivorysmiths from across the western mountain range.,
+Obsidian Knife,20,20,Weapon,,,,,1,,,1,,,,,"Once used for ritual sacrifice, some measure of power still clings to it.",
+Warmage's Staff,20,20,Weapon,,,,,,1,,,1,,,,The mark of a graduate from the Academy.,
+Four-Leaf Clover,0,20,Opportunity,,,,,,,,,,,,,Said to give mortals good luck., +1 to all stats in next encounter
+Gold,20-20,23,Gold,,,,,,,,,,,,,Gold,
+Belt of Stone,20,23,Belt,1,,,,,,,,,,,,Infused with primal power of the earth.,
+Handheld Crossbow,20,23,Sidearm,,,,,1,,,,,,,,Can be fired - but not reloaded - one-handed.,
+Traveller's Rugsack,25,25,Bag,,,,,,,,,,,,,Allows someone to comfortably hold four items.,Space +2
+Silver Throwing Knives,25,25,Sidearm,,,,,,1,,,,,,,Used almost exclusively by hunters of lycantropes to weaken their prey.,
+Vorpal Blade,25,25,Weapon,,,,1,,1,,,,,,,A silvery blade that is supernaturally sharp.,
+Ring of Protection,25,25,Shield,,,,,,,,,1,,,,Projects a near-impenetrable shield of force when fed with a measure of the wearer's lifeforce.,
+Chest of Valuables,0,25,Opportunity,,,,,,,,,,,,,The lock's too rusty to jimmy open.,Loot at 25 dropRange and +15 dropRollModifier

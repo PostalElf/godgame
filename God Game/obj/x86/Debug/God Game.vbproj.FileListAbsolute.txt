@@ -1,0 +1,8 @@
+E:\Visual Studio Projects\God Game\God Game\bin\Debug\God Game.exe
+E:\Visual Studio Projects\God Game\God Game\bin\Debug\God Game.pdb
+E:\Visual Studio Projects\God Game\God Game\bin\Debug\God Game.xml
+E:\Visual Studio Projects\God Game\God Game\obj\x86\Debug\God_Game.Resources.resources
+E:\Visual Studio Projects\God Game\God Game\obj\x86\Debug\God Game.vbproj.GenerateResource.Cache
+E:\Visual Studio Projects\God Game\God Game\obj\x86\Debug\God Game.exe
+E:\Visual Studio Projects\God Game\God Game\obj\x86\Debug\God Game.xml
+E:\Visual Studio Projects\God Game\God Game\obj\x86\Debug\God Game.pdb
