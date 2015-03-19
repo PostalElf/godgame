@@ -16,7 +16,7 @@
             Return highestIndex
         End Get
     End Property
-    Friend special As String
+    Friend special As KeyValuePair(Of monsterSpecial, Integer)
     Friend description As String
 
 
@@ -50,7 +50,7 @@
                     .stats(stat.Might) = commons.parseStatField(row(3))
                     .stats(stat.Cunning) = commons.parseStatField(row(4))
                     .stats(stat.Sorcery) = commons.parseStatField(row(5))
-                    .special = row(6)
+                    .special = commons.parseSpecialField(row(6))
                     .description = row(7)
                 End With
                 currentTierMonsters.Add(monster)

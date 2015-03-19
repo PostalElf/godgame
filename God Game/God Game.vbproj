@@ -73,6 +73,7 @@
     <Compile Include="Dev\csvParser.vb" />
     <Compile Include="Dev\Enums\constellation.vb" />
     <Compile Include="Dev\Enums\encounterReportType.vb" />
+    <Compile Include="Dev\Enums\monsterSpecial.vb" />
     <Compile Include="Dev\Enums\stat.vb" />
     <Compile Include="Dev\gdriveIntegration.vb">
       <SubType>Component</SubType>

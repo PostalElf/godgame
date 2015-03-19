@@ -4,22 +4,28 @@
         Console.SetWindowSize(100, 50)
         Console.ForegroundColor = ConsoleColor.DarkGray
 
-        Dim tPlayer As New player
-        world.players.Add(tPlayer)
-        Dim tPawn As pawn = tPlayer.spawnPawn()
+        Dim str As String = "Badvalue 2"
+        Dim kvp As KeyValuePair(Of monsterSpecial, Integer) = commons.parseSpecialField(str)
+        Console.WriteLine(kvp.Key.ToString)
+        Console.WriteLine(kvp.Value)
+        Console.ReadKey()
 
-        'cheats
-        tPawn.inventory.Add(New item("Junk", 100, "Junk", ""))
-        tPawn.equipment.Add(New item("Blazing Sword", 100, "Weapon", "A blazing sword", Nothing, {10, 0, 0}, Nothing, Nothing))
+        'Dim tPlayer As New player
+        'world.players.Add(tPlayer)
+        'Dim tPawn As pawn = tPlayer.spawnPawn()
 
-        For n = 1 To 20
-            testCombat(tPawn)
-            Console.ReadKey()
+        ''cheats
+        'tPawn.inventory.Add(New item("Junk", 100, "Junk", ""))
+        'tPawn.equipment.Add(New item("Blazing Sword", 100, "Weapon", "A blazing sword", Nothing, {10, 0, 0}, Nothing, Nothing))
 
-            Console.Clear()
-            Console.WriteLine(tPawn.consoleReport)
-            Console.ReadKey()
-        Next
+        'For n = 1 To 20
+        '    testCombat(tPawn)
+        '    Console.ReadKey()
+
+        '    Console.Clear()
+        '    Console.WriteLine(tPawn.consoleReport)
+        '    Console.ReadKey()
+        'Next
     End Sub
     Function getMenuKey(min As Integer, max As Integer) As Integer
         While True
