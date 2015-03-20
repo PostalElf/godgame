@@ -66,6 +66,7 @@
         defender = _defender
         attackDice = _attackDice
         damage = _damage
+
         reportlist.Enqueue(Me)
     End Sub
 #End Region

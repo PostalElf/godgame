@@ -14,3 +14,4 @@ E:\Visual Studio Projects\godgame\God Game\bin\Debug\God Game.pdb
 E:\Visual Studio Projects\godgame\God Game\bin\Debug\God Game.xml
 E:\Visual Studio Projects\godgame\God Game\obj\x86\Debug\God_Game.Resources.resources
 E:\Visual Studio Projects\godgame\God Game\obj\x86\Debug\God Game.vbproj.GenerateResource.Cache
+E:\Visual Studio Projects\godgame\God Game\bin\Debug\God Game.exe.config

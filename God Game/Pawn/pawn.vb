@@ -30,6 +30,7 @@
         End Get
     End Property
     Public constellation As constellation
+    Public statuses As New List(Of status)
 
     Public towncards As New townCards
     Public oppCards As New List(Of oppCard)
@@ -90,6 +91,9 @@
             Return Nothing
         End If
     End Function
+    Public Sub getStatus(status As status)
+        If statuses.Contains(status) = False Then statuses.Add(status)
+    End Sub
 
     Public Function consoleReport(Optional space As Integer = 0) As String
         Dim x As Integer = space + 1

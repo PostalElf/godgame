@@ -60,15 +60,50 @@
     Private Function performAttack(attacker As combatant, defender As combatant) As encounterReport
         If isOver = True Then Return Nothing
 
+        'roll
         Dim attackDice(1) As Integer
         For n = 0 To 1
             attackDice(n) = rng.Next(1, 7)
         Next
-
         Dim attackTotal As Integer = attackDice(0) + attackDice(1) + attacker.attackValue
         Dim defenceTotal As Integer = 7 + defender.defenceValue
-        If attackTotal > defenceTotal Then
-            Dim damage As Integer = constrain(attackTotal - defenceTotal, 1, attacker.attackValue)
+        Dim rawDamage As Integer = attackTotal - defenceTotal
+        Dim damage As Integer = constrain(rawDamage, 1, attacker.attackValue)
+
+
+        'check special for monster
+        Dim originalAttackDice() As Integer = attackDice
+        If attacker.parentMonster Is Nothing = False Then
+            Dim special As KeyValuePair(Of monsterSpecial, Integer) = attacker.parentMonster.special
+            If IsNothing(special) = False Then
+                Select Case special.Key
+                    Case monsterSpecial.Attack : attackTotal += special.Value
+                    Case monsterSpecial.Damage : damage += special.Value
+                    Case monsterSpecial.Vampiric : If damage > 0 Then attacker.health += constrain(damage, 0, special.Value)
+                    Case monsterSpecial.Weaken : If rollResistance(special.Value) = True Then defender.parentPawn.getStatus(status.Weakened)
+                    Case monsterSpecial.Slow : If rollResistance(special.Value) = True Then defender.parentPawn.getStatus(status.Slowed)
+                    Case monsterSpecial.Poison : If rollResistance(special.Value) = True Then defender.parentPawn.getStatus(status.Poisoned)
+                    Case monsterSpecial.Reroll
+                        For n = 0 To 1
+                            If attackDice(n) <= special.Value Then attackDice(n) = rng.Next(1, 7)
+                        Next
+                        attackTotal = attackDice(0) + attackDice(1) + attacker.attackValue
+                End Select
+            End If
+        End If
+        If defender.parentMonster Is Nothing = False Then
+            Dim special As KeyValuePair(Of monsterSpecial, Integer) = defender.parentMonster.special
+            If IsNothing(special) = False Then
+                Select Case special.Key
+                    Case monsterSpecial.Defence : defenceTotal += special.Value
+                    Case monsterSpecial.Regenerate : If damage <= 0 Then defender.health = constrain(defender.health + special.Value, 0, defender.parentMonster.health)
+                End Select
+            End If
+        End If
+
+
+        'check if hit
+        If damage > 0 Then
             defender.health = constrain(defender.health - damage, 0, 100)
             Return New encounterReport(Me, attacker, defender, attackDice, damage)
         Else
@@ -91,6 +126,10 @@
             Dim loot As loot = loot.dropLoot(monsterBase, tier, dropRangeModifier, dropRollModifier + (difficulty / 3))
             Return loot
         End If
+    End Function
+
+    Private Function rollResistance(difficulty As Integer) As Boolean
+        If rng.Next(1, 7) + rng.Next(1, 7) >= difficulty Then Return True Else Return False
     End Function
 End Class
 
